@@ -1,0 +1,22 @@
+ANALYSIS QUESTIONS:
+
+1. 
+    Average length of a scene: 1199.5561497326203 ~ 1200 words
+    Shortest scene: antony_and_cleopatra:2.8
+    Longest scene: loves_labors_lost:4.1
+    Shortest play: macbeth
+    Longest play: hamlet
+
+2. 
+    Overall counts such as longest/shortest counts could be misleading features because, we know that the length of a scene has no influence on the content of a scene.
+    This means that using count as a feature is not optimal because there is no relationship between them.
+    We could fix this by, storing the word counts of individual words. By doing this, we can see if 2 document share similar context by whether or not they have high appearances of a same word. 
+
+3. 
+    The queries that took the longest was query-6
+    The words in query-6 are extremly common words that appear very often in the english language. 
+    This means that the there are a lot of instances of the word in the inverted index, which means that the query process has to parse through a lot of 
+    locations, requiring more time.
+
+4. 
+    Graph
